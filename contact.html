@@ -1,1 +1,60 @@
 <!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Pages</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+	<main>
+        <form action="contact_submit.php" method="post">
+            <label for="aanhef">Aanhef:</label>
+            <select name="aanhef" id="aanhef">
+                <option value="dhr">Dhr.</option>
+                <option value="mvr">Mvr.</option>
+            </select><br><br>
+
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="telefoon">Telefoonnummer:</label>
+            <input type="tel" id="telefoon" name="telefoon"><br><br>
+
+            <label for="adres">Postadres:</label><br>
+            <input type="text" id="straat" name="straat" placeholder="Straat"><br>
+            <input type="text" id="nummer" name="nummer" placeholder="Nr + toevoeging"><br>
+            <input type="text" id="postcode" name="postcode" placeholder="Postcode"><br>
+            <input type="text" id="woonplaats" name="woonplaats" placeholder="Woonplaats"><br><br>
+
+            <label>Communicatievoorkeur:</label><br>
+            <input type="radio" id="email" name="communicatievoorkeur" value="email">
+            <label for="email">Email</label><br>
+            <input type="radio" id="telefoon" name="communicatievoorkeur" value="telefoon">
+            <label for="telefoon">Telefoon</label><br>
+            <input type="radio" id="post" name="communicatievoorkeur" value="post">
+            <label for="post">Post</label><br><br>
+
+            <label for="bericht">Bericht:</label><br>
+            <textarea id="bericht" name="bericht" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Verstuur</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Damon Hooijkaas</p>
+    </footer>
+</body>
+</html>
